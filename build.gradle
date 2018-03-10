@@ -10,5 +10,5 @@ repositories {
 }
 
 dependencies {
-    
+    compile 'org.springframework:spring-mvc:4.2.1.RELEASE'
 }
