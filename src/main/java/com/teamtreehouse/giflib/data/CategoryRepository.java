@@ -14,6 +14,14 @@ public class CategoryRepository {
             new Category(3, "destruction")
     );
 
+    public Category findById(int id) {
+        for(Category category : ALL_CATEGORIES) {
+            if(category.getId() == id)
+                return category;
+        }
+        return null;
+    }
+
     public List<Category> getAllCategories() {
         return ALL_CATEGORIES;
     }
