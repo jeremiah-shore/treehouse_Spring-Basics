@@ -26,7 +26,7 @@ public class CategoryController {
         return "categories";
     }
 
-    @RequestMapping("/category/{id}")
+    @RequestMapping("/categories/{id}")
     public String category(@PathVariable int id, ModelMap modelMap) {
         Category category = categoryRepository.findById(id);
         modelMap.put("category", category);
